@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\dotnet6-sqlserver-crud-application",
+    "\\dotnet6-sqlserver-crud-application\\Controllers",
+    "\\dotnet6-sqlserver-crud-application\\Helpers",
+    "\\dotnet6-sqlserver-crud-application\\obj",
+    "\\dotnet6-sqlserver-crud-application\\Services",
+    "\\react-crud-app",
+    "\\react-crud-app\\src",
+    "\\react-crud-app\\src\\components"
+  ],
+  "SelectedNode": "\\dotnet6-sqlserver-crud-application\\appsettings.json",
+  "PreviewInSolutionExplorer": false
+}
