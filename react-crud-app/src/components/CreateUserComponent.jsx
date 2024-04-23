@@ -10,10 +10,12 @@ class CreateUserComponent extends Component {
             firstName: '',
             description: '',
             email: '',
+            password: '',
             errorMessage: ''
         }
         this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
         this.changedescriptionHandler = this.changedescriptionHandler.bind(this);
+        this.changePasswordHandler = this.changePasswordHandler.bind(this);
         this.saveOrUpdateUser = this.saveOrUpdateUser.bind(this);
     }
 
@@ -27,7 +29,8 @@ class CreateUserComponent extends Component {
                 this.setState({
                     firstName: user.firstName,
                     description: user.description,
-                    email: user.email
+                    email: user.email,
+                    password: user.password
                 });
             });
         }
@@ -37,7 +40,7 @@ class CreateUserComponent extends Component {
         e.preventDefault();
         
         let user = { firstName: this.state.firstName, 
-            description: this.state.description, email: this.state.email };
+            description: this.state.description, email: this.state.email, password: this.state.password};
         console.log('user => ' + JSON.stringify(user));
      
         if (this.state.id === '_add') {
@@ -61,6 +64,10 @@ class CreateUserComponent extends Component {
 
     changeEmailHandler = (event) => {
         this.setState({ email: event.target.value });
+    }
+
+    changePasswordHandler(event) {  // New handler for password input
+        this.setState({ password: event.target.value });
     }
 
     cancel() {
@@ -101,7 +108,11 @@ class CreateUserComponent extends Component {
                                         <input placeholder="Email Address" name="email" className="form-control"
                                             value={this.state.email} onChange={this.changeEmailHandler} />
                                     </div>
-
+                                    <div>
+                                        <label> Password: </label>
+                                        <input type="password" placeholder="Password" name="password" className="form-control"
+                                            value={this.state.password} onChange={this.changePasswordHandler} />
+                                    </div>
                                     <button className="btn btn-success" onClick={this.saveOrUpdateUser}>Save</button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>Cancel</button>
                                     

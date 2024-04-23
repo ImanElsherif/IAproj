@@ -54,7 +54,8 @@ class ListUserComponent extends Component {
                                 <tr>
                                     <th> User First Name</th>
                                 <th> User Description</th>
-                                    <th> User Email Id</th>
+                                <th> User Email Id</th>
+                                <th> Password</th>
                                     <th> Actions</th>
                                 </tr>
                             </thead>
@@ -65,7 +66,8 @@ class ListUserComponent extends Component {
                                         <tr key = {user.id}>
                                              <td> { user.firstName} </td>   
                                                 <td> {user.description}</td>
-                                             <td> {user.email}</td>
+                                                <td> {user.email}</td>
+                                                <td> {user.password}</td>
                                              <td>
                                                  <button onClick={ () => this.editUser(user.id)} className="btn btn-info">Update </button>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteUser(user.id)} className="btn btn-danger">Delete </button>

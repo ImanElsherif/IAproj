@@ -36,6 +36,10 @@ class ViewUserComponent extends Component {
                             <label> User Email ID: </label>
                             <div> { this.state.user.email }</div>
                         </div>
+                        <div className="row">
+                            <label> User Password: </label>
+                            <div> {this.state.user.password}</div>
+                        </div>
                     </div>
 
                 </div>

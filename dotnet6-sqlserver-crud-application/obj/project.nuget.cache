@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8+mZanntlP0tXHj06e9K3vfQdHaI9239jcxfk5u1QuKUbte5a72SlOYS+CzCmk3Juc/1gVHpXWAVi/V/YXElzQ==",
+  "dgSpecHash": "uPXtzYOW/mdr+KyFWbBQGlAcSQThF+LxDvxo3Lk+wnFzNizapBUz63vomLFuiPVM50zmoC+/k3IZJV/trKgP9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\imane\\Source\\Repos\\dotnet6-sqlserver-reactjs-crud\\dotnet6-sqlserver-crud-application\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\imane\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\imane\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\imane\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\imane\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\imane\\.nuget\\packages\\efcore.namingconventions\\7.0.2\\efcore.namingconventions.7.0.2.nupkg.sha512",
     "C:\\Users\\imane\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\imane\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

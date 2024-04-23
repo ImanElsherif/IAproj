@@ -11,6 +11,7 @@ public class UpdateRequest
     [EmailAddress]
     public string Email { get; set; }
 
+    public string Password { get; set; }
 
     private string replaceEmptyWithNull(string value)
     {

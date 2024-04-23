@@ -74,3 +74,4 @@ C:\Users\imane\Source\Repos\dotnet6-sqlserver-reactjs-crud\dotnet6-sqlserver-cru
 C:\Users\imane\Source\Repos\dotnet6-sqlserver-reactjs-crud\dotnet6-sqlserver-crud-application\obj\Debug\net6.0\WebApi.pdb
 C:\Users\imane\Source\Repos\dotnet6-sqlserver-reactjs-crud\dotnet6-sqlserver-crud-application\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\imane\Source\Repos\dotnet6-sqlserver-reactjs-crud\dotnet6-sqlserver-crud-application\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\imane\Source\Repos\dotnet6-sqlserver-reactjs-crud\dotnet6-sqlserver-crud-application\bin\Debug\net6.0\BCrypt.Net-Next.dll
