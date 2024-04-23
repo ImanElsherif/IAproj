@@ -6,7 +6,7 @@ using WebApi.Entities;
 public class UpdateRequest
 {
     public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public string description { get; set; }
 
     [EmailAddress]
     public string Email { get; set; }

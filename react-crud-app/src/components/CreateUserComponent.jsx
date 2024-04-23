@@ -8,12 +8,12 @@ class CreateUserComponent extends Component {
             
             id: this.props.match.params.id,
             firstName: '',
-            lastName: '',
+            description: '',
             email: '',
             errorMessage: ''
         }
         this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
-        this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
+        this.changedescriptionHandler = this.changedescriptionHandler.bind(this);
         this.saveOrUpdateUser = this.saveOrUpdateUser.bind(this);
     }
 
@@ -26,7 +26,7 @@ class CreateUserComponent extends Component {
                 let user = res.data;
                 this.setState({
                     firstName: user.firstName,
-                    lastName: user.lastName,
+                    description: user.description,
                     email: user.email
                 });
             });
@@ -37,7 +37,7 @@ class CreateUserComponent extends Component {
         e.preventDefault();
         
         let user = { firstName: this.state.firstName, 
-            lastName: this.state.lastName, email: this.state.email };
+            description: this.state.description, email: this.state.email };
         console.log('user => ' + JSON.stringify(user));
      
         if (this.state.id === '_add') {
@@ -55,8 +55,8 @@ class CreateUserComponent extends Component {
         this.setState({ firstName: event.target.value });
     }
 
-    changeLastNameHandler = (event) => {
-        this.setState({ lastName: event.target.value });
+    changedescriptionHandler = (event) => {
+        this.setState({ description: event.target.value });
     }
 
     changeEmailHandler = (event) => {
@@ -92,9 +92,9 @@ class CreateUserComponent extends Component {
                                             value={this.state.firstName} onChange={this.changeFirstNameHandler} />
                                     </div>
                                     <div className="form-group">
-                                        <label> Last Name: </label>
-                                        <input placeholder="Last Name" name="lastName" className="form-control"
-                                            value={this.state.lastName} onChange={this.changeLastNameHandler} />
+                                        <label> description: </label>
+                                        <input placeholder="description" name="description" className="form-control"
+                                            value={this.state.description} onChange={this.changedescriptionHandler} />
                                     </div>
                                     <div className="form-group">
                                         <label> Email Id: </label>

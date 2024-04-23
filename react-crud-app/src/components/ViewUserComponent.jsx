@@ -29,8 +29,8 @@ class ViewUserComponent extends Component {
                             <div> { this.state.user.firstName }</div>
                         </div>
                         <div className = "row">
-                            <label> User Last Name: </label>
-                            <div> { this.state.user.lastName }</div>
+                            <label> User description: </label>
+                            <div> {this.state.user.description }</div>
                         </div>
                         <div className = "row">
                             <label> User Email ID: </label>

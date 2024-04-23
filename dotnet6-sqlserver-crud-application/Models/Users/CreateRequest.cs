@@ -10,7 +10,7 @@ public class CreateRequest
     public string FirstName { get; set; }
 
     [Required]
-    public string LastName { get; set; }
+    public string description { get; set; }
 
     [Required]
     [EmailAddress]
